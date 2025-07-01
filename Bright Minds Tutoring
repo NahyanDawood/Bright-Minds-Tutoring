@@ -1,0 +1,59 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function TutoringWebsite() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-yellow-100 via-blue-50 to-pink-100 text-gray-900">
+      <header className="bg-gradient-to-r from-blue-600 to-purple-600 shadow p-4 flex justify-between items-center text-white">
+        <h1 className="text-2xl font-bold">Bright Minds Tutoring</h1>
+      </header>
+
+      <section className="text-center py-16 px-4 bg-gradient-to-r from-blue-100 to-purple-100">
+        <h2 className="text-4xl font-bold mb-4 text-blue-800">Focused Tutoring for Grades 2–5</h2>
+        <p className="text-lg mb-6 text-gray-800">Helping students build confidence and master subjects with care and clarity.</p>
+      </section>
+
+      <section className="py-12 px-4 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold text-center mb-8 text-purple-700">Subjects & Grade Levels</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="shadow-lg bg-yellow-50">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-blue-700">Math (Grades 2–5)</h3>
+              <p>Foundational math skills including addition, subtraction, multiplication, division, fractions, and problem-solving.</p>
+            </CardContent>
+          </Card>
+          <Card className="shadow-lg bg-pink-50">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-purple-700">Science (Grades 1–3)</h3>
+              <p>Engaging exploration of basic life science, earth science, and simple experiments tailored for young learners.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 px-4 max-w-3xl mx-auto text-center">
+        <h2 className="text-2xl font-bold mb-4 text-blue-700">Our Tutoring Approach</h2>
+        <p className="text-gray-800">
+          We believe in patience, encouragement, and building a strong academic foundation. Every child learns differently, so we tailor our sessions to meet individual needs and spark curiosity.
+        </p>
+      </section>
+
+      <section className="py-12 px-4 bg-gradient-to-r from-green-100 to-yellow-100 text-center">
+        <h2 className="text-2xl font-bold mb-4 text-green-700">Affordable Pricing</h2>
+        <p className="text-lg mb-2 text-gray-800">$20 per hour – flexible scheduling available.</p>
+        <p className="text-gray-700">Great value for personalized attention and academic growth.</p>
+      </section>
+
+      <section className="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-12 px-4 text-center">
+        <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
+        <p className="mb-2">📞 Phone: <a href="tel:2147181237" className="underline">214-718-1237</a></p>
+        <p>📧 Email: <a href="mailto:nahyandawood295@gmail.com" className="underline">nahyandawood295@gmail.com</a></p>
+      </section>
+
+      <footer className="bg-purple-100 text-center p-4 text-sm text-gray-700">
+        © 2025 Bright Minds Tutoring. All rights reserved.
+      </footer>
+    </div>
+  );
+}
